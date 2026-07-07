@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CashFlow</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>CashFlow</h1>
+      <div class="summary">
+        <div class="card">
+          <h3>Total Expenses</h3>
+          <p id="total-expense">₹0.00</p>
+        </div>
+      </div>
+      <div class="container">
+        <form id="expense-form">
+          <input type="text" id="title" placeholder="Title" required />
+
+          <select id="category" required>
+            <option value="">Select Category</option>
+
+            <option>Food</option>
+            <option>Travel</option>
+            <option>Shopping</option>
+            <option>Bills</option>
+            <option>Entertainment</option>
+          </select>
+          <input
+            type="number"
+            id="amount"
+            placeholder="Amount"
+            step="0.01"
+            required
+          />
+          <input type="date" id="date" placeholder="Date" required />
+
+          <button type="submit">Add Expense</button>
+        </form>
+        <ul id="expense-list"></ul>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
